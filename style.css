@@ -154,7 +154,8 @@ nav {
     transition: all 1s;
     background: #BDD531 0 0 no-repeat padding-box;
 }
-.top-title-button a{
+
+.top-title-button a {
     font-family: 'Droid Sans', sans-serif;
     font-weight: bold;
     border: 1px solid #BDD531;
@@ -163,21 +164,50 @@ nav {
     color: #292929;
     box-sizing: border-box;
 }
+
 /*=====end top images and text======*/
-.box-title{
+.box-title {
     width: 50%;
     margin: 0 100px;
+    padding: 65px 0;
 }
-.title{
+
+.title {
     font-family: 'Droid Sans', sans-serif;
     font-weight: bold;
     letter-spacing: 1px;
     color: #292929;
     font-size: 30px;
-    padding: 80px 0 30px;
+    padding: 20px 0;
 }
-.title-text{
+
+.title-text {
     font-family: 'Droid Sans', sans-serif;
     color: #292929;
     opacity: 1;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin-left: 80px;
+}
+.featured-box {
+    width: 30%;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    border: 1px solid #D0D0D0;
+    border-radius: 0 0 6px 6px;
+    opacity: 1;
+}
+.featured-img{
+    width: 100%;
+
+}
+.featured-title{
+    font-family: 'Droid Sans', sans-serif;
+    letter-spacing: 1px;
+    color: #292929;
+    opacity: 1;
+    font-weight: bold;
+    margin: 10px 0;
 }
