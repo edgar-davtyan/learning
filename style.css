@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+section{
+    padding-bottom: 90px;
+}
 @font-face {
     font-family: 'Hianali';
     src: url('font/Hianali.eot');
@@ -313,4 +315,47 @@ nav {
     color: #292929;
     box-sizing: border-box;
     margin-left:15px;
+}
+.articles-container{
+    background: #FAFAFA;
+}
+.articles-img{
+    width: 19%;
+    display: inline-block;
+    vertical-align: top;
+}
+.articles-img1{
+    width: 100%;
+}
+.box-articles::after{
+    content: "";
+    width: 95%;
+    margin-left: 12px;
+    margin-top: -5px;
+    display: block;
+    height: 5px;
+    background: #BDD531 0 0 no-repeat padding-box;
+    transform-origin: right;
+    transform: rotate(90deg);
+}
+.articles-img2{
+    vertical-align: top;
+    width: 100%;
+}
+.articles-img-title{
+    font-family: 'Droid Sans', sans-serif;
+    color: #292929;
+    font-weight: bold;
+    margin: 15px 0;
+
+}
+.articles-img-text{
+    font-family: 'Droid Sans', sans-serif;
+    color: #292929;
+}
+.images-articles{
+
+}
+.text-box{
+
 }
