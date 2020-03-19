@@ -26,7 +26,28 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: 'Raleway';
+    src: url('font/Raleway-Black.eot');
+    src: url('font/Raleway-Black.eot?#iefix') format('embedded-opentype'),
+    url('font/Raleway-Black.woff2') format('woff2'),
+    url('font/Raleway-Black.woff') format('woff'),
+    url('font/Raleway-Black.ttf') format('truetype'),
+    url('font/Raleway-Black.svg#Raleway-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('font/Raleway-Thin.eot');
+    src: url('font/Raleway-Thin.eot?#iefix') format('embedded-opentype'),
+    url('font/Raleway-Thin.woff2') format('woff2'),
+    url('font/Raleway-Thin.woff') format('woff'),
+    url('font/Raleway-Thin.ttf') format('truetype'),
+    url('font/Raleway-Thin.svg#Raleway-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -185,29 +206,111 @@ nav {
     font-family: 'Droid Sans', sans-serif;
     color: #292929;
     opacity: 1;
+    min-width: 280px;
 }
-.container{
+
+.container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 70%;
-    margin-left: 80px;
+    margin-left: 100px;
+    padding-bottom: 75px;
 }
+
 .featured-box {
     width: 30%;
     background: #FFFFFF 0 0 no-repeat padding-box;
     border: 1px solid #D0D0D0;
     border-radius: 0 0 6px 6px;
     opacity: 1;
+    box-shadow: 0 3px 6px #0000002C;
 }
-.featured-img{
+
+.featured-img {
     width: 100%;
 
 }
-.featured-title{
+.full-box{
+    padding: 15px 10px;
+}
+.featured-subtitle{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #292929;
+}
+.featured-title {
     font-family: 'Droid Sans', sans-serif;
     letter-spacing: 1px;
     color: #292929;
     opacity: 1;
     font-weight: bold;
-    margin: 10px 0;
+}
+.prof-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.prof{
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+.prof-name{
+    font-family: 'Droid Sans', sans-serif;
+    color: #505050;
+    font-size: 13px;
+    font-weight: bolder;
+}
+.prof img{
+    width: 20%;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.prof-box-sum{
+    font-family: 'Raleway',sans-serif;
+    color: #D35135;
+    font-size: 20px;
+    font-weight: bold;
+}
+.prof-discount{
+    position: relative;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 100;
+    margin-right: 5px;
+    color: #8B8B8B;
+}
+.prof-discount::after{
+    position: absolute;
+    top: 10px;
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    background: #8B8B8B;
+}
+.box-button{
+    margin-left: 100px;
+}
+.box-button a:hover{
+    transition: all 1s;
+    background: #BDD531 0 0 no-repeat padding-box;
+}
+.box-button1{
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    border: 1px solid #BDD531;
+    padding: 10px 35px;
+    border-radius: 5px;
+    color: #292929;
+    box-sizing: border-box;
+}
+.box-button2{
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    border: 1px solid #BDD531;
+    padding: 10px 35px;
+    border-radius: 5px;
+    color: #292929;
+    box-sizing: border-box;
+    margin-left:15px;
 }
