@@ -118,13 +118,15 @@ nav {
     transition: all 1s;
     content: "";
     margin-bottom: 1px;
-    width: 100%;
+    width: 10px;
     height: 4px;
     background: #BDD531 0 0 no-repeat padding-box;
 }
 
 .nav-content li:hover::after {
+    transition: all 0.5s;
     opacity: 1;
+    width: 100%;
 }
 
 .nav-back1 {
@@ -153,8 +155,7 @@ nav {
 }
 
 .top-img {
-    width: 100%;
-    background-size: cover;
+
 }
 
 .topp {
@@ -221,7 +222,7 @@ nav {
     font-family: 'Droid Sans', sans-serif;
     color: #292929;
     opacity: 1;
-    min-width: 280px;
+
 }
 
 .container {
@@ -229,7 +230,7 @@ nav {
     justify-content: space-between;
     width: 70%;
     margin-left: 100px;
-    padding-bottom: 75px;
+    padding-bottom: 40px;
 }
 
 .featured-box {
@@ -316,6 +317,10 @@ nav {
 
 .box-button {
     margin-left: 100px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .box-button a:hover {
@@ -324,6 +329,7 @@ nav {
 }
 
 .box-button1 {
+    transition: all 1s;
     font-family: 'Droid Sans', sans-serif;
     font-weight: bold;
     border: 1px solid #BDD531;
@@ -333,38 +339,112 @@ nav {
     box-sizing: border-box;
 }
 
+.rotate {
+    transform: rotate(180deg);
+}
+
+.box-svgs {
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.box-svg {
+    transition: all 0.5s;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #BDD531;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    fill: #BDD531;
+}
+
+.box-svg:hover {
+    transition: 0.5s;
+    background: #BDD531;
+    fill: #FFFFFF;
+}
+
+.slid-svg1 {
+    position: absolute;
+    left: 3px;
+}
+
 .articles-container {
     background: #FAFAFA;
 }
 
 .articles-img {
-    width: 19%;
+    width: 18%;
     display: inline-block;
     vertical-align: top;
+    margin-left: 74px;
+    margin-top: 100px;
 }
 
 .articles-img1 {
     width: 100%;
 }
 
-.box-articles::after {
+.box-articles {
+    position: relative;
+}
+
+.box-articles2 {
+    position: relative;
+}
+
+.box-articles::before {
     content: "";
-    width: 95%;
-    margin-left: 12px;
-    margin-top: -5px;
+    transition: all .5s;
+    width: 100%;
     display: block;
-    height: 5px;
+    height: 6px;
     background: #BDD531 0 0 no-repeat padding-box;
-    transform-origin: right;
-    transform: rotate(90deg);
+    position: absolute;
+}
+
+.box-articles2::before {
+    content: "";
+    transition: all .5s;
+    width: 100%;
+    display: block;
+    height: 6px;
+    background: #BDD531 0 0 no-repeat padding-box;
+    position: absolute;
+}
+
+.box-articles:hover::before {
+    transition: all .5s;
+    height: 65px;
+    opacity: 0.76;
+}
+
+.box-articles2:hover::before {
+    transition: all .5s;
+    height: 65px;
+    opacity: 0.76;
 }
 
 .articles-img2 {
-    vertical-align: top;
-    width: 100%;
+    width: 35%;
+    display: inline-block;
+    margin-right: 50px;
 }
 
 .articles-img-title {
+    font-family: 'Droid Sans', sans-serif;
+    color: #292929;
+    font-weight: bold;
+    margin: 15px 0;
+
+}
+
+.articles-img-title2 {
     font-family: 'Droid Sans', sans-serif;
     color: #292929;
     font-weight: bold;
@@ -377,10 +457,335 @@ nav {
     color: #292929;
 }
 
-.images-articles {
-
+.articles-img-text2 {
+    font-family: 'Droid Sans', sans-serif;
+    color: #292929;
 }
 
-.text-box {
-
+.box-title2 {
+    width: 50%;
+    display: inline-block;
+    margin-left: 55px;
 }
+
+.title2 {
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #292929;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 22px;
+}
+
+.title-text2 {
+    font-family: 'Droid Sans', sans-serif;
+    color: #292929;
+    opacity: 1;
+    margin-bottom: 45px;
+    width: 70%;
+}
+
+.box-button2 {
+    padding-bottom: 80px;
+}
+
+.box-button2 a:hover {
+    transition: all 1s;
+    background: #BDD531 0 0 no-repeat padding-box;
+}
+
+.box-button3 {
+    transition: all 1s;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    border: 1px solid #BDD531;
+    padding: 10px 50px;
+    border-radius: 5px;
+    color: #292929;
+    box-sizing: border-box;
+}
+
+.title-asked {
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #292929;
+    font-size: 35px;
+    padding: 20px 0;
+}
+
+.asked-box {
+    font-family: 'Droid Sans', sans-serif;
+    width: 40%;
+    list-style: none;
+    align-items: center;
+    min-width: 400px;
+    color: #292929;
+}
+
+.asked-box ul {
+    width: 100%;
+    list-style: none;
+}
+
+.asked-box li::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #B2B2B2;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.asked-svg {
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border: 2px solid #BDD531;
+    fill: #BDD531;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 65px;
+}
+
+.asked-svg:hover {
+    transition: all 0.5s;
+    fill: #FFF;
+    background: #BDD531;
+    transform: scale(1.3);
+}
+
+.asked-svgs {
+    position: absolute;
+    width: 70%;
+    top: 2px;
+    left: 3px;
+}
+
+.asked-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 65px;
+}
+
+.asked-image-after {
+    width: 30%;
+}
+
+.asked-images {
+    width: 100%;
+}
+
+.title-student {
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #292929;
+    font-size: 35px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.contents-row {
+    display: flex;
+}
+
+.student-box {
+    width: 45%;
+}
+
+.contents-student {
+    display: flex;
+    width: 85%;
+    margin-left: 100px;
+    padding-bottom: 65px;
+}
+
+.student-img {
+    width: 100%;
+}
+
+.student-imgs {
+    width: 100%;
+}
+
+.inform-student {
+    margin-left: 40px;
+}
+
+.inform-student-name {
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.inform-student-name:after {
+    content: "Photography";
+    display: block;
+    margin-bottom: 23px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.previus-parent {
+    display: flex;
+    /*transform: rotate(90deg);*/
+}
+
+.parent-row {
+    position: relative;
+    height: 12px;
+    width: 15%;
+}
+
+.row {
+    border: 1px solid #000;
+    width: 89%;
+    height: 0;
+    position: absolute;
+    top: 30%;
+    left: 11%;
+}
+
+.rows {
+    height: 10px;
+    width: 10%;
+    border: 1px solid #000;
+}
+
+
+.student-box2 {
+    width: 50%;
+}
+
+.contents-student2 {
+    display: flex;
+    width: 79%;
+    margin-left: 100px;
+    padding-bottom: 65px;
+    margin-top: 70px;
+}
+
+.student-img2 {
+    width: 100%;
+}
+
+.inform-student2 {
+    margin-left: 40px;
+}
+
+.inform-student-name2 {
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.inform-student-name2:after {
+    content: "Photography";
+    display: block;
+    margin-bottom: 23px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*====main end====*/
+/*+++++footer*+++++/*/
+footer {
+    background: #333333;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.footer-content {
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+.footer-logo {
+    font-weight: bolder;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+
+.nav-content2 {
+    font-family: 'Droid Sans', sans-serif;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 400px;
+}
+
+.nav-box::after {
+    content: "";
+    display: block;
+    width: 15%;
+    height: 1px;
+    background: white;
+    margin: 25px auto;
+}
+
+.footer-logo:after {
+    content: "online courses";
+    display: block;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: 100;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+}
+
+.footer-logos {
+    width: 50%;
+    margin: 30px auto;
+}
+
+.footer-logos ul {
+    fill: #f1f1f1;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.footer-logos li:hover {
+    transition: all 0.5s;
+    background: #BDD531;
+}
+
+.footer-logos ul li svg {
+    fill: #f1f1f1;
+    width: 45%;
+    margin-top: 5px;
+}
+
+.logos {
+    transition: all 0.5s;
+    border-radius: 5px;
+    background: #292929;
+    width: 10%;
+    height: 35px;
+}
+.inf-aist{
+    background: #292929;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.inf-aist-text{
+    color: #FFC400;
+}
+
+
+
+
